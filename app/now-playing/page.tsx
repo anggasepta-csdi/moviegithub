@@ -1,9 +1,11 @@
 "use client"
+
 import getmovie from '@/services/api'
 import { url } from 'inspector'
-import React, { useEffect, useState } from 'react'
+//import React, { useEffect, useState } from 'react'
 import { json } from 'stream/consumers';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 interface IResData {
   dates: Dates;
@@ -34,8 +36,8 @@ interface Dates {
 }
 
 // declare page
-const page = () => {
-  const [movies, setMovie]=useState<Result[]>()
+const Page = () => {
+  const [movies, setMovie]= useState<Result[]>()
 
   //get data, [kondisi]
   useEffect(()=>{
@@ -79,4 +81,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

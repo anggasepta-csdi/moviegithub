@@ -34,7 +34,7 @@ interface Dates {
 }
 
 // declare page
-const page = () => {
+const Page = () => {
   const [movies, setMovie]=useState<Result[]>()
 
   //get data, [kondisi]
@@ -79,4 +79,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
